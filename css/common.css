@@ -1,0 +1,1249 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
+/* 共通のスタイル */
+/* body {
+    width: 100%;
+    background-image: url(../images/background.png);
+    object-fit: cover;
+    /* background-repeat: no-repeat; */
+/* background-position: center;
+    background-attachment: fixed;
+}  */
+
+
+.wrapper {
+    position: relative;
+    /* width: 1400px; */
+    margin: 0 auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: 100%;
+    text-align: left;
+    background-color: #fff;
+    z-index: 999;
+    background-image: url(../images/nav_back.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.cart_icon img {
+    vertical-align: bottom;
+    padding: 30% 0 10% 30%;
+}
+
+nav.global_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav.global_nav li {
+    width: 15%;
+    padding: 40%;
+    margin: 20% -5%;
+    list-style-type: none;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    border-radius: 5px;
+}
+
+nav.global_nav li:hover {
+    background-color: #EA5514;
+}
+
+nav.global_nav li a {
+    font-size: 1.2rem;
+    font-family: 'Modak', cursive;
+    text-decoration: none;
+    color: #E60012;
+}
+
+nav.global_nav li a:hover {
+    color: #fff;
+}
+
+.logo_small {
+    height: 50%;
+    /* position: relative; */
+}
+
+.logo_small img {
+    position: absolute;
+    left: 14%;
+    bottom: 1%;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+
+.logo img {
+    margin: 5%;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.top_area {
+    display: flex;
+    z-index: -1;
+    width: 100%;
+    background-color: #EA5514;
+}
+
+div .mainvisu {
+    width: 50%;
+    position: relative;
+    /* width: 70%; */
+    height: 1000px;
+    overflow: hidden;
+    /* margin: 0 auto; */
+    z-index: 990;
+}
+
+.img-01, .img-02, .img-03{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .img-01{
+    background-image: url('../images/mainvisual.png');
+    animation: slide-animation-01 24s infinite;
+ }
+ .img-02{
+    background-image: url('../images/mainvisu2.jpg');
+    animation: slide-animation-02 24s infinite;
+ }
+ .img-03{
+    background-image: url('../images/mainvisu3.jpg');
+    animation: slide-animation-03 24s infinite;
+ }
+ @keyframes slide-animation-01 {
+    0% {opacity: 1; transform: scale(1.0);}
+    30% {opacity: 1;}
+    40% {opacity: 0; transform: scale(1.15);}
+    90% {opacity: 0}
+    100% {opacity: 1; transform: scale(1.0);}
+  }
+  @keyframes slide-animation-02 {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: scale(1.1);}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 0; transform: scale(1.0);}
+    100% {opacity: 0;}
+  }
+  @keyframes slide-animation-03 {
+    0% {opacity: 0;}
+    60% {opacity: 0;  transform: scale(1.0);}
+    70% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0; transform: scale(1.1);}
+  }
+
+
+.catchcopy {
+    position: relative;
+    padding: 5% 0 0 7%;
+    box-sizing: border-box;
+    width: 50%;
+    /* background-image: url(../images/main_back.png); */
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment: fixed; */
+    z-index: 99;
+}
+
+.kanji {
+    position: absolute;
+    z-index: -99;
+    right: 20%;
+    font-family: 'Hina Mincho', serif;
+    color: #fff;
+    -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(1deg);
+  opacity: 0.4;
+  cursor:default;
+}
+
+.kanji1{
+    font-size: 12rem;
+    color: #E60012;
+}
+
+.kanji2 {
+    font-size: 5rem;
+    color: #d2b48c;
+}
+
+.kanji3 {
+    font-size: 9rem;
+}
+
+.kanji4 {
+    font-size: 4rem;
+    color: #d2b48c;
+    margin: 20px;
+}
+
+.kanji5 {
+    font-size: 5rem;
+    color: #E60012;
+    margin: 100px;
+}
+
+.catchcopy_sentence {
+    margin: 0 0 5% 0;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.discription {
+    margin: 0 0 2% 0;
+    font-size: 1rem;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.btn_buy_now {
+    width: 175px;
+    height: 75px;
+    display: block;
+}
+
+.btn_buy_now img{
+    width: 160px;
+    height: 75px;
+    display: block;
+
+}
+
+.btn_buy_now a:hover {
+    opacity: 0.5;
+}
+
+
+.products_menu_fuji img{
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+    vertical-align: bottom;
+}
+
+
+main {
+    width: 100%;
+}
+
+.section1 {
+    width: 100%;
+    padding: 5% 10% 5% 5%;
+    box-sizing: border-box;
+    background-color: #e6361f;
+    position: relative;
+}
+
+.slide_show_area {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 10% 3% 0;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.slide_contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 3%;
+    padding: 3% 0 0 0;
+    background-color: #fff;
+    border: solid 5px #40220F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+/* slide */
+
+
+
+.slide_show_area::-webkit-scrollbar {
+
+    height: 14px;
+    /* スクロールバーの高さ */
+}
+
+.slide_show_area::-webkit-scrollbar-thumb {
+    background: #d2b48c;
+    /* ツマミの色 */
+    border-radius: 7px;
+    /* ツマミ両端の丸み */
+}
+
+.slide_show_area::-webkit-scrollbar-track {
+    background: #f5deb3;
+    /* トラックの色 */
+    border-radius: 7px;
+    /* トラック両端の丸み */
+}
+
+.slide_img {
+    
+    padding: 5%;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.pro_name {
+    margin:25% 0 20% 0 ;
+    /* padding: 25% 0 20% 0; */
+    /* box-sizing: border-box; */
+    font-size: 1rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.btn_get_it img{
+    position: absolute;
+    left: 13%;
+    bottom: 7%;
+    vertical-align: bottom;
+}
+
+.btn_get_it a:hover {
+    opacity: 0.5;
+}
+
+.sub_catchcopy {
+    margin: 5% 5% 0 0;
+    text-align: right;
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+
+.sub_span {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.recipe_menu_fuji img{
+    position: absolute;
+    bottom: 0%;
+}
+
+.section2 {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    background-color: #fff;
+}
+
+.recipe_text {
+    width: 50%;
+}
+
+.recipe_number {
+    position: absolute;
+    top: 4%;
+    left: 6%;
+}
+
+.recipe_name {
+    text-align: center;
+    width: 50%;
+    margin: 5% auto;
+    font-size: 2rem;
+    border-bottom: 2px solid #40220F;
+    padding-bottom: 5px;
+    color: #40220F;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.recipe_description {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: #EA5514;
+    border: solid 5px #40220F;
+    border-radius: 20px;
+}
+
+.recipe_text {
+    text-align: left;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ol {
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+ol li {
+    width: 230%;
+    line-height: 1.3;
+    font-size: 1.1rem;
+}
+
+.btn_check_it {
+    width: 148px;
+    margin: 0 auto;
+}
+
+.btn_check_it a:hover {
+    opacity: 0.5;
+}
+
+.recipe_movie_area {
+    width: 50%;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -50%);
+    /* top: 0; */
+    /* right: 0; */
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: #EA5514;
+    padding: 0 0 3% 0;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+}
+
+
+
+.icon1,
+.icon2,
+.icon3 {
+    width: 10%;
+    height: 50px;
+    filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(328deg) brightness(112%) contrast(100%);
+}
+
+.icon1 a img,
+.icon2 a img,
+.icon3 a img {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+small {
+    padding: 0 0 0% 1%;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Abril Fatface', cursive;
+}
+
+/* fade in */
+.fade-in {
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+}
+.fade-in-right {
+    transform: translate(50px, 0);
+}
+
+.scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+    
+.fade-in-left {
+    transform: translate(-10px, 0);
+}
+
+.start {
+	background: #f5deb3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+
+/* ########### 599px以下 ########### */
+@media (max-width: 599px) {
+
+    .img-01, .img-02, .img-03{
+        height: 80%;
+    }
+
+
+    .logo {
+        z-index: 99;
+    }
+    
+    nav.global_nav {
+        display: none;
+    }
+
+    .cart_icon {
+        display: none;
+    }
+
+    /*　ハンバーガーボタン　*/
+    .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        right: 13px;
+        top: 12px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .hamburger span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: 17px;
+        background: #EA5514;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 10px;
+    }
+
+    .hamburger span:nth-child(2) {
+        top: 20px;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 30px;
+    }
+
+    /* ナビ開いてる時のボタン */
+    .hamburger.active span:nth-child(1) {
+        top: 16px;
+        left: 16px;
+        background: #E60012;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .hamburger.active span:nth-child(2),
+    .hamburger.active span:nth-child(3) {
+        top: 16px;
+        background: #E60012;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    nav.globalMenuSp {
+        height: 100vh;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0%;
+        background-image: url(../images/background_nav_week.jpg);
+        background-color: #fff;
+        text-align: center;
+        width: 100%;
+        background-repeat: no-repeat;
+        /* opacity: 0; */
+        visibility: hidden;
+        /* transition: opacity .6s ease, visibility .6s ease; */
+    }
+
+    nav.globalMenuSp ul {
+        margin: 35% auto;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    nav.globalMenuSp ul li {
+        width: 100%;
+        writing-mode: horizontal-tb;
+        /* transition: .4s all; */
+    }
+    
+    nav.globalMenuSp ul li:last-child {
+        padding-bottom: 0;
+    }
+
+    nav.globalMenuSp ul li a:hover {
+        opacity: 0.5;
+    }
+
+    nav.globalMenuSp ul li a {
+        width: 100%;
+        margin: 15% auto;
+        font-size: 2.5rem;
+        display: block;
+        color: #E60012;
+        font-family: 'Modak', cursive;
+        text-decoration: none;
+    }
+
+    /* このクラスを、jQueryで付与・削除する */
+    nav.globalMenuSp.active {
+        /* opacity: 100; */
+        visibility: visible;
+        transition:visibility .6s ease;
+
+    }
+
+
+    header {
+        position: absolute;
+        right: 0%;
+        top: 0;
+        width: 10%;
+        background-image: url(../images/nav_back.png);
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-attachment: local; */
+    }
+
+
+    .top_area {
+        flex-direction: column;
+        position: relative;
+    }
+
+    div .mainvisu {
+        width: 100%;
+        height: 700px;
+    }
+
+    div .mainvisu img {
+        width: 100%;
+    }
+
+    .img-01, .img-02, .img-03{
+        width: 120%;
+        height: 120%;
+        background-size: contain;
+     }
+
+    .logo_small {
+        padding: 5%;
+        box-sizing: border-box;
+    }
+
+    .logo_small img {
+        width: 70%;
+    }
+
+    .catchcopy {
+        padding: 10% 0 0 10%;
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+
+    
+
+    .catchcopy_sentence {
+        margin: 0 0 5% 0;
+        font-size: 2rem;
+    }
+
+    .discription {
+        margin: 0 0 2% 0;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .btn_buy_now {
+        width: 192px;
+        height: 253px;
+        display: block;
+    }
+
+    
+
+    .products_menu_fuji img{
+        position: absolute;
+        bottom: 0;
+        left: 35%;
+    }
+
+
+    .pro_name {
+        margin:10% 0 20% 0 ;
+        /* font-size: 1rem; */
+    }
+
+    .slide_show_area {
+        margin: 0 0 0 10%;
+        flex-direction: column;
+        width: 86%;
+        height: 560px;
+    }
+
+    .slide_contents {
+        margin: 5% 0 0 0;
+        width: 100%;
+    }
+
+    .slide_img img {
+        width: 80%;
+    }
+
+
+    /* slide */
+    .slide_show_area {
+        overflow-y: scroll;
+    }
+
+    .slide_contents {
+        width: 100%;
+        flex-shrink: 0;
+        height: 490px;
+    }
+
+
+    
+
+    .sub_catchcopy {
+        margin: 10% 5% 45% 0;
+        font-size: 1.5rem;
+    }
+
+    .sub_span {
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .recipe_menu_fuji img{
+        bottom: 0%;
+        left: 10%;
+    }
+
+    .section2 {
+        width: 91%;
+        flex-direction: column;
+    }
+
+    
+    .recipe_text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .recipe_text :nth-child(1) {
+        order: 1;
+    }
+    .recipe_text :nth-child(2) {
+        order: 2;
+    }
+    .recipe_text :nth-child(3) {
+        order: 3;
+    }
+    .recipe_text :nth-child(4) {
+        order: 5;
+    }
+    .recipe_text :nth-child(5) {
+        order: 4;
+    } */
+    
+
+    
+
+    .recipe_number {
+        top: 3%;
+        left: 42%;
+    }
+
+    .recipe_name {
+        text-align: center;
+        width: 90%;
+        margin: 30% auto 10% auto;
+        font-size: 2rem;
+
+    }
+
+    .recipe_description {
+       display: none;
+    }
+
+    .btn_check_it {
+        width: 198px;
+        margin: 10% auto;
+        display: none;
+    }
+
+    .btn_check_it img {
+        width: 200px;
+    }
+
+    
+
+
+    .btn_check_it2 {
+        width: 198px;
+        margin: 10% auto;
+
+    }
+
+    .btn_check_it2 a:hover {
+        opacity: 0.5;
+    } 
+
+    .recipe_movie {
+        height: 574px;
+    }
+
+    .recipe_movie_area {
+        width: 100%;
+    }
+
+    .recipe_text2 {
+        margin: 0 0 0 5px;
+        font-family: sans-serif;
+        position: absolute;
+        top: 0;
+        color: #fff;
+        text-align: left;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .icon_area {
+        padding: 6% 0 0 0;
+        box-sizing: border-box;
+        width: 50%;
+        height: 130px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    small {
+        padding: 0 0 0 5%;
+        box-sizing: border-box;
+        font-size: 0.5rem;
+    }
+
+    footer {
+        height: 170px;
+    }
+
+    /* text animation */
+    .recipe_text2 {
+    overflow: hidden;
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
+    }
+    
+    .recipe_text2 li {
+    display: block;
+    transform: translate(100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s;
+    }
+    
+    .recipe_text2.-visible,
+    .recipe_text2.-visible li {
+    transform: translate(0, 0);
+    }
+      
+
+}
+
+
+
+/* ########### 600px以上～768px以下 ########### */
+@media (min-width: 600px) and (max-width: 768px) {
+
+    .hum_nav {
+        display: none;
+    }
+
+    .wrapper {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    nav.global_nav li a {
+        font-size: 0.9rem;
+        
+    }
+    
+    .cart_icon img{
+        padding: 7% 0 0 7%;
+        box-sizing: border-box;
+    }
+
+    .logo_small img {
+        width: 70%;
+    }
+
+    div .mainvisu img {
+        width: 580px;
+        height: 870px;
+        /* height: 100%; */
+        /* object-fit: cover; */
+        vertical-align: bottom;
+        z-index: -1;
+    }
+
+
+    .catchcopy {
+        padding: 5% 0 0 3%;
+        background-color: #EA5514;
+    } 
+
+    .catchcopy_sentence {
+        margin: 0 0 5% 0;
+        font-size: 2rem;
+    }
+    
+    .discription {
+        margin: 0 0 2% 0;
+        font-size: 0.6rem;
+        line-height: 1.3;
+    }
+
+    .section1 {
+        padding: 5% 10% 5% 0%;
+    }
+    
+    .sub_catchcopy {
+        margin: 5% 5% 30% 0;
+
+    }
+
+    .products_menu_fuji {
+        position: absolute;
+        right: 15%;
+        bottom: 0%;
+    }
+    
+    
+    .recipe_name {
+        padding-left: 10px;
+    }
+
+    .recipe_description {
+        display: none;
+    }
+
+
+
+
+    .slide_show_area {
+        margin: 0 0 0 10%;
+        width: 86%;
+        overflow-x: scroll;
+
+    }
+
+    .slide_contents {
+        margin: 5% 5% 0 0;
+        /* width: 100%; */
+        width: 40%;
+        flex-shrink: 0;
+        height: 350px;
+    }
+
+    .slide_img img {
+        width: 80%;
+    }
+
+    .recipe_menu_fuji {
+        left: 2%;
+    }
+
+
+    .recipe_text {
+        width: 50%;
+    }
+
+
+    .recipe_name {
+        width: 60%;
+        margin: 30% auto;
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    .btn_check_it {
+        width: 100%;
+        margin: 20% auto;
+        text-align: center;
+    }
+
+    .btn_check_it img {
+        width: 60%;
+    }
+
+    .icon_area {
+        padding: 3% 0 0 0;
+        box-sizing: border-box;
+        width: 300px;
+        height: 190px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    small {
+        padding: 0 0 0 3%;
+        box-sizing: border-box;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        height: 220px;
+    }
+
+    .btn_check_it2,
+    .recipe_text2{
+        display: none;
+    }
+
+
+}
+
+
+
+/* ########### 769px以上 ########### */
+@media (min-width: 769px) {
+
+    .hum_nav {
+        display: none;
+    }
+
+    .logo_small img {
+        width: 70%;
+    }
+
+    div .mainvisu img {
+        height: 100%;
+        vertical-align: bottom;
+        z-index: -1;
+    }
+
+
+    .catchcopy {
+        padding: 5% 0 0 3%;
+        background-color: #EA5514;
+    } 
+
+    
+
+    .catchcopy_sentence {
+        margin: 0 0 5% 0;
+        font-size: 2rem;
+    }
+    
+    .discription {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+    
+    
+    .products_menu_fuji {
+        position: absolute;
+        right: 25%;
+        bottom: 0%;
+        vertical-align: bottom;
+    }
+    
+    .slide_show_area {
+        margin: 0 0 0 5%;
+        width: 86%;
+    }
+
+    .slide_contents {
+        margin: 5% 5% 0 0;
+        width: 40%;
+        flex-shrink: 0;
+    }
+
+    .slide_img img {
+        width: 80%;
+    }
+
+    .btn_get_it img{
+        bottom: 7%;
+    }
+
+    .recipe_menu_fuji {
+        left: 2%;
+    }
+
+
+    .slide_show_area {
+        overflow-x: scroll;
+    }
+
+    .slide_contents {
+        width: 30%;
+        flex-shrink: 0;
+        height: 400px;
+    }
+
+    .sub_catchcopy {
+        margin: 5% 5% 10% 0;
+    }
+
+    .recipe_number {
+        top: 3%;
+        left: 5%;
+    }
+
+    .recipe_name {
+        font-size: 1.7rem;
+    }
+
+    .icon_area {
+        padding: 3% 0 0 0;
+        width: 270px;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    small {
+        padding: 0 0 0 3%;
+        box-sizing: border-box;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    .btn_check_it2,
+    .recipe_text2{
+        display: none;
+    }
+
+    
+    
+
+}
+
+
+
+/* ########### 1000px以上 ########### */
+@media (min-width: 1000px) {
+
+
+    body {
+        width: 100%;
+        background-image: url(../images/background_deep.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-attachment: fixed;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    div .mainvisu img {
+        width: 100%;
+        vertical-align: bottom;
+        z-index: -1;
+    }
+
+    .catchcopy {
+        padding: 3% 0 0 3%;
+        background-color: #EA5514;
+    } 
+
+    .catchcopy_sentence {
+        margin: 0 0 1% 0;
+        font-size: 2.7rem;
+    }
+
+    .discription {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .slide_contents {
+        height: 570px;
+    }
+
+    
+    .icon_area {
+        padding: 3% 0 0 0;
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icon_area {
+        padding: 3% 0 0 0;
+        width: 270px;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    small {
+        padding: 0 0 0 2%;
+        box-sizing: border-box;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        height: 300px;
+    }
+
+    
+}

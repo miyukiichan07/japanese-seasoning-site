@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+
+.rec_show {
+    background-color: #EA5514;
+}
+
+.recipe {
+    text-align: center;
+}
+
+.rec_name {
+    text-align: center;
+    width: 50%;
+    margin: 5% auto;
+    font-size: 2rem;
+    border-bottom: 2px solid #40220F;
+    padding-bottom: 5px;
+    color: #40220F;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+section {
+    width: 95%;
+    padding: 2% 10%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    width: 100%;
+}
+
+h2 {
+    height: 30px;
+    width: 80px;
+    margin: 0 auto;
+    padding: 2% 0 0 0;
+    font-family: 'Modak', cursive;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #fff;
+    border: yellow 3px solid;
+    box-shadow: 7px 7px 3px #1816167a;
+    background-color: #e6361f;
+    border-radius: 20px;
+
+}
+
+.rec_movie_area {
+    width: 50%;
+    height: 650px;
+    position: relative;
+    margin: 5% 0;
+}
+
+.rec_description {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4%;
+    box-sizing: border-box;
+    background-color: #EA5514;
+    border: solid 5px #40220F;
+    border-radius: 20px;
+}
+
+.rec_text {
+    width: 50%;
+    text-align: left;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+video {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -50%);
+}
+
+.more_ {
+    height: 50px;
+    width: 100px;
+    font-family: 'Modak', cursive;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #fff;
+    border: yellow 3px solid;
+    box-shadow: 7px 7px 3px #1816167a;
+    background-color: #e6361f;
+    position: absolute;
+    right: 25%;
+    bottom: 3%;
+    border-radius: 20px;
+}
+
+
+/* ########### 599px以下 ########### */
+@media (max-width: 599px) {
+    section {
+        padding: 2% 15% 15% 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rec_description {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5% 10% 5% 5%;
+        box-sizing: border-box;
+        font-size: 0.3rem;
+    }
+
+    .rec_text {
+        padding: 3% 3% 3% 10%;
+    }
+
+    ol li {
+        width: 100%;
+        font-size: 0.5rem;
+    }
+
+    .rec_movie_area {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        padding: 25% 7% 25% 2%;
+        box-sizing: border-box;
+    }
+
+    .box1 {
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    .box2 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .more_ {
+        right: 40%;
+        bottom: 1.2%;
+        border-radius: 20px;
+    }
+
+    
+
+
+}
+
+/* ########### 600px以上～768px以下 ########### */
+@media (min-width: 600px) and (max-width: 768px) {
+
+    section {
+        padding: 2% 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rec_description {
+        width: 100%;
+        /* height: 650px; */
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    .rec_movie_area {
+        width: 100%;
+        height: 550px;
+        position: relative;
+        margin: 25% 2%;
+    }
+
+    .box1 {
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    .box2 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .more_ {
+        right: 40%;
+        bottom: 3%;
+        border-radius: 20px;
+    }
+}
+
+/* ########### 769px以上 ########### */
+@media (min-width: 769px) and (max-width: 1400px) {
+    section {
+        padding: 2% 1%;
+
+    }
+
+    .rec_description {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    .rec_movie_area {
+        width: 60%;
+        height: 550px;
+        position: relative;
+        margin: 15% 2%;
+    }
+
+    .more_ {
+        right: 22%;
+        bottom: 5%;
+        border-radius: 20px;
+    }
+
+}
+
+/* ########### 1000px以上 ########### */
+@media (min-width: 1400px) {
+    section {
+        width: 95%;
+        padding: 2% 3%;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}

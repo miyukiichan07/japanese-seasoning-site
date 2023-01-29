@@ -1,0 +1,445 @@
+.clearfix::after {
+    content: “”;
+    display: block;
+    clear: both;
+}
+
+.border {
+    margin-left: 15%;
+    width: 3px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 0;
+}
+
+.catch {
+    height: 50px;
+    width: 70%;
+    padding: 1.5% 0 0 10%;
+    background-color: #fff;
+}
+
+.catch_ {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    color: #e6361f;
+    z-index: 1;
+    position: relative;
+}
+
+.article1 {
+    width: 95%;
+    padding: 5%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.visu {
+    width: 50%;
+    padding: 0 0 0 5%;
+    box-sizing: border-box;
+}
+
+.visu img {
+    z-index: 1;
+    position: relative;
+}
+
+.message {
+    width: 50%;
+    padding: 2%;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.big_msg {
+    padding: 0 0 10% 0;
+    box-sizing: border-box;
+    line-height: 1.8;
+    font-size: 4rem;
+}
+
+.small_msg {
+    line-height: 2;
+}
+
+.article2 {
+    width: 95%;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form {
+    float: right;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.input {
+    background-color: #fff;
+    border: none;
+    width: 1150px;
+    height: 50px;
+    margin: 2% 0 0 0;
+}
+
+textarea {
+    background-color: #fff;
+    border: none;
+    width:1150px;
+    height: 200px;
+    margin: 2% 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.submit {
+    width: 100px;
+    height: 50px;
+    background-color: #e6361f;
+    border: none;
+    color: #fff;
+} 
+
+/*背景がつくのアニメーションの開始を0.5秒遅らせる*/
+.submit:hover{
+	transition: 1s;
+    background-color: rgba(250, 250, 113, 0.589);
+}
+
+
+.article3 {
+    width: 95%;
+    margin: 3% 0 0 0;
+    display: flex;
+}
+
+.add {
+    width: 50%;
+    padding: 0 0 0 10%;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.address {
+    width: 50%;
+    padding: 5%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    background-color: #fff;
+    color: #e6361f;
+    z-index: 1;
+    position: relative;
+}
+
+.tell {
+    margin: 5% 5% 0 0;
+    font-size: 1.5rem;
+    float: right;
+    
+}
+
+.map {
+    width: 50%;
+}
+
+iframe {
+    filter: grayscale(80%);
+}
+
+.TextRandomAnime span{
+	opacity: 0;
+}
+.TextRandomAnime.appearRandomtext span{ 
+	animation:text_randomanime_on .5s ease-out forwards;
+}
+
+/*アニメーションで透過を0から1に変化させる*/
+@keyframes text_randomanime_on {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.TextRandomAnime.appearRandomtext span:nth-child(2n) {
+	animation-delay: .9s;/* spanのついた2の倍数の文字列の変化を0.5秒遅らせる*/
+}
+.TextRandomAnime.appearRandomtext span:nth-child(3n+1) {
+	animation-delay: .75s;/* spanのついた3の倍数＋1の文字列の変化を0.15秒遅らせる*/
+}
+
+
+/* ########### 599px以下 ########### */
+@media (max-width: 599px) {
+    .products_title {
+        color: #40220fab;
+    }
+   
+    .border {
+        background-color: #40220f31;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .catch {
+        height: 80px;
+        padding: 5% 0 0 10%;
+        background-color: #40220fab;
+        z-index: 1;
+    }
+
+    .catch_ {
+        font-size: 1.5rem;
+    }
+
+    .visu {
+        width: 20%;
+        padding: 0 0 0 1%;
+        box-sizing: border-box;
+    }
+
+    .visu img {
+        width: 450px;
+    }
+
+    .message {
+        width: 50%;
+        color: #40220F;    
+    }
+    
+    .big_msg {
+        padding: 10% 0 5% 0;
+        box-sizing: border-box;
+        line-height: 1.3;
+        font-size: 3rem;
+    }
+
+    .form {
+        float: right;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        color: #40220fab;
+    }
+    
+    .input {
+        width: 400px;
+        height: 30px;
+        background-color: #40220fab;
+        color: #fff;
+    }
+    
+    
+    textarea {
+        width:400px;
+        height: 150px;
+        background-color: #40220fab;
+        color: rgba(255, 255, 255, 0.322);
+    }
+
+    .submit {
+        font-size: 0.5rem;
+        width: 80px;
+        height: 35px;
+    } 
+
+    .article3 {
+        flex-direction: column;
+    }
+
+    .add {
+        width: 95%;
+        padding: 5% 0 0 5%;
+    }
+    
+    .address {
+        width: 80%;
+        padding: 5%;
+        font-size: 1.3rem;
+        background-color: #40220fab;
+        color: #fff;
+    }
+    
+    .tell {
+        margin: 10% 10% 5% 0;
+        font-size: 1rem; 
+        color: #40220fab;       
+    }
+    
+    .map {
+        padding: 5%;
+        box-sizing: border-box;
+        width: 95%;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ########### 600px以上～768px以下 ########### */
+@media (min-width: 600px) and (max-width: 768px) {
+
+    .catch {
+        padding: 3% 0 0 10%;
+        background-color: #fff;
+    }
+
+    .catch_ {
+        font-size: 1.5rem;
+    }
+
+    .visu {
+        width: 50%;
+        padding: 0 0 0 1%;
+        box-sizing: border-box;
+    }
+
+    .message {
+        width: 50%;
+        padding: 5%;
+    
+    }
+    
+    .big_msg {
+        padding: 0 0 3% 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+        font-size: 3rem;
+    }
+
+    .form {
+        float: right;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .input {
+        width: 500px;
+        height: 30px;
+    }
+
+    .submit {
+        font-size: 0.5rem;
+        width: 80px;
+        height: 35px;
+    } 
+    
+    textarea {
+        width:500px;
+        height: 150px;
+    }
+
+    .add {
+        width: 50%;
+        padding: 0 0 0 5%;
+    }
+    
+    .address {
+        width: 80%;
+        padding: 5%;
+        font-size: 1.3rem;
+    }
+    
+    .tell {
+        margin: 10% 5% 5% 0;
+        font-size: 1rem;        
+    }
+    
+    .map {
+        width: 50%;
+    }
+    
+    iframe {
+        width: 80%;
+        height: 80%;
+    }
+    
+}
+
+/* ########### 769px以上 ########### */
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    .visu {
+        width: 50%;
+        padding: 0 0 0 1%;
+        box-sizing: border-box;
+    }
+
+    .message {
+        width: 50%;
+        padding: 5%;
+    
+    }
+    
+    .big_msg {
+        padding: 0 0 3% 0;
+        box-sizing: border-box;
+        line-height: 1.5;
+        font-size: 3rem;
+    }
+
+    .form {
+        float: right;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    .input {
+        width: 700px;
+    }
+    
+    textarea {
+        width:700px;
+        height: 200px;
+    }
+
+    .add {
+        width: 50%;
+        padding: 0 0 0 10%;
+        color: #fff;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .address {
+        width: 80%;
+        padding: 5%;
+        font-size: 1.5rem;
+    }
+    
+    .tell {
+        margin: 10% 5% 5% 0;
+        font-size: 1.3rem;        
+    }
+    
+    .map {
+        width: 50%;
+    }
+    
+    iframe {
+        width: 80%;
+        height: 80%;
+    }
+    
+    
+}
+
+/* ########### 1000px以上 ########### */
+@media (min-width: 1300px) {
+}

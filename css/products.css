@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+main {
+    background-color: #EA5514;
+}
+
+
+.products_title {
+    color: #fff;
+    font-family: 'Modak', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 5% 0 5% 0;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.category  ul{
+    width: 95%;
+    padding: 0 35% 0 30%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.category ul li {
+    width: 25%;
+    margin: 0;
+    text-align: center;
+}
+
+.category ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.category ul li a:hover {
+    background-color: #40220F;
+    border-radius: 20px;
+}
+
+.pro_show {
+    width: 100%;
+}
+
+.show_area {
+    width: 95%;
+    padding: 0 15% 10% 15%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    /* grid-template-rows: ; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 550px;
+    margin: 3% 1%;
+    padding: 2% 0 0 0;
+    background-color: #fff;
+    border: solid 5px #40220F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+div.slide_img{
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.vorume {
+    padding: 0 5% 0 0;
+    box-sizing: border-box;
+    margin:5% 0 5% 0 ;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.39);
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.pr_name {
+    height: 70px;
+    margin:5% 0 5% 0 ;
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.price {
+    padding: 0% 0 0% 0;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #40220F;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.price span {
+    font-size: 0.6rem;
+}
+
+.get_it {
+    text-align: center;
+    padding: 15% 0;
+    box-sizing: border-box;
+}
+.get_it a{
+    padding: 2% 8%;
+    box-sizing: border-box;
+    font-family: 'Modak', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    border: yellow 3px solid;
+    box-shadow: 7px 7px 3px #1816167a;
+    background-color: #e6361f;
+    /* position: absolute;
+    left: 17%;
+    bottom: 10%; */
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.get_it a:hover {
+    opacity: 0.5;
+}
+
+.more{
+    height: 50px;
+    width: 100px;
+    font-family: 'Modak', cursive;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #fff;
+    border: yellow 3px solid;
+    box-shadow: 7px 7px 3px #1816167a;
+    background-color: #e6361f;
+    position: absolute;
+    right: 25%;
+    bottom: 3%;
+    border-radius: 20px;
+}
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:#e6361f;
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	text-align: center;
+    border-radius: 20px;
+    border: #1816167a 3px solid;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.8rem;
+	transition:all 0.3s;
+    position: relative;
+    right: 180%;
+}
+
+#page-top a:hover{
+	background: #40220F;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 999;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(150px);
+  }
+}
+
+/* ########### 599px以下 ########### */
+@media (max-width: 599px) {
+    .show_area {
+        width: 430px;
+        height: 650px;
+        /* flex-direction: row; */
+        overflow-y: auto;
+    }
+
+    .contents {
+        width: 90%;
+        flex-shrink: 0;
+    }
+
+    .category ul {
+        padding: 0 10% 0 5%;
+    }
+    .category ul li a {
+        font-size: 0.5rem;
+    }
+
+    /* .show_area {
+        overflow: scroll;
+
+    } */
+
+    .contents {
+        margin: 3% 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+    }
+    
+
+    #page-top a{
+        right: 10%;
+    }
+
+    .more{
+        height: 40px;
+        width: 100px;
+        position: relative;
+        bottom: 0.1%;
+        left: 80%;
+    }
+
+    /* slide */
+
+
+
+    .show_area::-webkit-scrollbar {
+        height: 14px;
+        /* スクロールバーの高さ */
+    }
+
+    .show_area::-webkit-scrollbar-thumb {
+        background: #d2b48c;
+        /* ツマミの色 */
+        border-radius: 7px;
+        /* ツマミ両端の丸み */
+    }
+
+    .show_area::-webkit-scrollbar-track {
+        background: #f5deb3;
+        /* トラックの色 */
+        border-radius: 7px;
+        /* トラック両端の丸み */
+    }
+}
+
+/* ########### 600px以上～768px以下 ########### */
+@media (min-width: 600px) and (max-width: 768px) {
+    .contents {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 450px;
+    }
+
+    .get_it a{
+        font-size: 1.5rem;
+    }
+
+
+    #page-top a{
+        right: 26%;
+    }
+
+}
+
+/* ########### 769px以上 ########### */
+@media (min-width: 769px) and (max-width: 1000px){
+    
+    .contents {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 550px;
+    }
+
+    .get_it a{
+        font-size: 1.7rem;
+    }
+    
+    #page-top a{
+        right: 40%;
+    }
+}
+
+/* ########### 1000px以上 ########### */
+@media (min-width: 1000px) {
+    .contents {
+        height: 470px;
+    }
+
+    .get_it a{
+        height: 100px;
+        width: 100px;
+        font-size: 1.5rem;
+    }
+
+    #page-top a{
+        right: 180%;
+    }
+}
+
+/* ########### 1300px以上 ########### */
+@media (min-width: 1300px) {
+    .contents {
+        height: 610px;
+    }
+    .get_it a{
+        height: 50px;
+        width: 250px;
+        font-size: 2rem;
+    }
+}
